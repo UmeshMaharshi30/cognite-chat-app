@@ -1,36 +1,79 @@
-export const all_users = [
-    {name :"Dave", id: "dave", email: "dave@react.com", friends : ["john", "mark", "dave", "jessica"]},
-    {name :"John", id: "john", email: "john@react.com", friends : ["mark", "dave", "jessica"]},
-    {name :"Mark", id: "mark", email: "mark@react.com", friends : ["john", "katie", "jessica"]},
-    {name :"Jessica", id: "jessica", email: "jessica@react.com"},
-    {name :"Katie", id: "katie", email: "katie@react.com"},
-];
+export const all_users = {
+    "dave" : {name :"Dave", id: "dave", email: "dave@react.com", friends : ["john", "mark", "dave", "jessica"]},
+    "john" : {name :"John", id:"john", email: "john@react.com", friends : ["mark", "dave", "jessica"]},
+    "mark" : {name :"Mark", id:"mark", email: "mark@react.com", friends : ["john", "katie", "jessica"]},
+    "jessica" : {name :"Jessica", id: "jessica", email: "jessica@react.com"},
+    "katie" : {name :"Katie", id : "katie", email: "katie@react.com"}
+};
 
 
 export const chat_history = {
     "dave" : [
         {
-            user_id : "john",
+            id : "john",
             messages : [
                 {
-                    user_id : "dave",
+                    id : "dave",
                     message : "Hello John"
                 },
                 {
-                    user_id : "john",
+                    id : "john",
                     message : "Hello Dave"
+                },{
+                    id : "dave",
+                    message : "Hello John"
+                },
+                {
+                    id : "john",
+                    message : "Hello Dave"
+                },{
+                    id : "dave",
+                    message : "Hello John"
+                },
+                {
+                    id : "john",
+                    message : "Hello Dave"
+                },{
+                    id : "dave",
+                    message : "Hello John"
+                },
+                {
+                    id : "john",
+                    message : "Hello Dave"
+                },{
+                    id : "dave",
+                    message : "Hello John"
+                },
+                {
+                    id : "john",
+                    message : "Hello Dave"
+                },{
+                    id : "dave",
+                    message : "Hello John"
+                },
+                {
+                    id : "john",
+                    message : "Hello Dave"
+                },{
+                    id : "dave",
+                    message : "Hello Johergergeveb ergergegerh betththn"
+                },
+                {
+                    id : "john",
+                    message : "Hello Dave 12 efwfwvwg3rgrgr3g"
                 }
+
             ]
         },
         {
-            user_id : "jessica",
+            id : "jessica",
             messages : [
                 {
-                    user_id : "dave",
+                    id : "dave",
                     message : "Hello Jessica"
                 },
                 {
-                    user_id : "john",
+                    id : "john",
                     message : "Hello Dave"
                 }
             ]
@@ -38,27 +81,27 @@ export const chat_history = {
     ],
     "mark" : [
         {
-            user_id : "katie",
+            id : "katie",
             messages : [
                 {
-                    user_id : "dave",
+                    id : "dave",
                     message : "Hello Mark"
                 },
                 {
-                    user_id : "mark",
+                    id : "mark",
                     message : "Hello Katie"
                 }
             ]
         },
         {
-            user_id : "jessica",
+            id : "jessica",
             messages : [
                 {
-                    user_id : "mark",
+                    id : "mark",
                     message : "Hello Jessica"
                 },
                 {
-                    user_id : "jessica",
+                    id : "jessica",
                     message : "Hello mark"
                 }
             ]

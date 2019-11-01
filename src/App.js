@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboard from './components/dashboard/dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome !</h1>
-      <p>This is a react-redux template</p>
-    </div>
+    <Dashboard></Dashboard>
   );
 }
 
