@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cognite-chat-app/static/css/main.d11119a9.chunk.css",
+    "main.js": "/cognite-chat-app/static/js/main.f5fd8184.chunk.js",
+    "main.js.map": "/cognite-chat-app/static/js/main.f5fd8184.chunk.js.map",
+    "runtime-main.js": "/cognite-chat-app/static/js/runtime-main.de1befff.js",
+    "runtime-main.js.map": "/cognite-chat-app/static/js/runtime-main.de1befff.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/cognite-chat-app/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.d7fee1a3.chunk.js": "/cognite-chat-app/static/js/2.d7fee1a3.chunk.js",
+    "static/js/2.d7fee1a3.chunk.js.map": "/cognite-chat-app/static/js/2.d7fee1a3.chunk.js.map",
+    "index.html": "/cognite-chat-app/index.html",
+    "precache-manifest.0e3698786097c3d85ce67a35609ec758.js": "/cognite-chat-app/precache-manifest.0e3698786097c3d85ce67a35609ec758.js",
+    "service-worker.js": "/cognite-chat-app/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/cognite-chat-app/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.d11119a9.chunk.css.map": "/cognite-chat-app/static/css/main.d11119a9.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de1befff.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.d7fee1a3.chunk.js",
+    "static/css/main.d11119a9.chunk.css",
+    "static/js/main.f5fd8184.chunk.js"
+  ]
+}
