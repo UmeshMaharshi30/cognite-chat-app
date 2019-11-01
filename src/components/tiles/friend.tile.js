@@ -7,7 +7,7 @@ class FriendTile extends Component {
         const friend = all_users[this.props.id];
         var friend_name = friend.name;
         var friend_id = friend.id;
-        return <li className="list-group-item btn">{friend_name}</li>
+        return <li className="list-group-item btn" onClick={() => this.props.tileClick(friend_id)}>{friend_name}</li>
     }
 }
 

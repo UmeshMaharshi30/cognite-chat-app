@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import AllFriends from './../tiles/all.friends';
 import Conversation from './../conversation/conversation';
+import { connect } from "react-redux";
+import {user_actions } from './../../actions'
 
 class Dashboard extends Component { 
 
     render() {
+        const app_config = this.props.user_reducer;
+        const base_user = app_config.base_user;
+        const friend_selected = app_config.friend_id;
+        const friendTileOnclick = this.props.onFriendTileClick;
+
         return <div className="container">
             <nav className="navbar navbar-light bg-light">
                 <a className="navbar-brand" href="#">
@@ -12,12 +19,24 @@ class Dashboard extends Component {
                 </a>
             </nav>
             <div className="row d-flex m-1">
-                <div className="col-4"><AllFriends></AllFriends></div>
-                <div className="col-8"><Conversation></Conversation></div>
+                <div className="col-4"><AllFriends tileClick={friendTileOnclick}></AllFriends></div>
+                <div className="col-8"><Conversation friend_id={friend_selected} base_user={base_user}></Conversation></div>
             </div>
         </div>
     }
 
 }
 
-export default Dashboard;
+const mapStateToProps = state => {
+    return state;
+}
+
+const mapDispatchToProps = dispatch => { 
+    return {
+        onFriendTileClick:(friend_id) => {
+            dispatch(user_actions.openChat(friend_id))
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

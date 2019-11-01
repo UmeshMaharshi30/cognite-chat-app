@@ -73,8 +73,13 @@ export const chat_history = {
                     message : "Hello Jessica"
                 },
                 {
-                    id : "john",
+                    id : "jessica",
                     message : "Hello Dave"
+                }
+                ,
+                {
+                    id : "jessica",
+                    message : "How are you doing ? "
                 }
             ]
         }
