@@ -22,7 +22,7 @@ class Dashboard extends Component {
             </nav>
             <div className="row d-flex m-1">
                 <div className="col-4"><AllFriends tileClick={friendTileOnclick}></AllFriends></div>
-                <div className="col-8"><Conversation chat_history={chat_history} sendMessage={sendMessage} friend_id={friend_selected} base_user={base_user}></Conversation></div>
+                <div className="col-8"><Conversation sendMessage={sendMessage} ></Conversation></div>
             </div>
         </div>
     }
@@ -30,7 +30,6 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log(state);
     return state;
 }
 

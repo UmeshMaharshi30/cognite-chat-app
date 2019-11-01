@@ -22,7 +22,6 @@ class Conversation extends Component {
             </div>
         }
         const prev_chat = chat_history[friend_selected].messages;
-        console.log(prev_chat);
         return <div style={{"height" : "600px"}}>
         <div style={{"height" : "450px"}}>{prev_chat.map((c, i) => <ChatLine key={i} message={c} base_user_id={base_user} friend_id={friend_selected}></ChatLine>)}</div>
         <TextBox></TextBox>
@@ -31,7 +30,7 @@ class Conversation extends Component {
 }
 
 const mapStateToProps = state => {
-    return state;
+    return state.user_reducer;
 }
 
 export default connect(mapStateToProps)(Conversation);
