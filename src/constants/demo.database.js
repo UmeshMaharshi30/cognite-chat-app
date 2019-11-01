@@ -1,4 +1,4 @@
-export const all_users = {
+export var all_users = {
     "dave" : {name :"Dave", id: "dave", email: "dave@react.com", friends : ["john", "mark", "dave", "jessica"]},
     "john" : {name :"John", id:"john", email: "john@react.com", friends : ["mark", "dave", "jessica"]},
     "mark" : {name :"Mark", id:"mark", email: "mark@react.com", friends : ["john", "katie", "jessica"]},
@@ -7,7 +7,7 @@ export const all_users = {
 };
 
 
-export const chat_history = {
+export var chat_history = {
     "dave" : [
         {
             id : "john",
