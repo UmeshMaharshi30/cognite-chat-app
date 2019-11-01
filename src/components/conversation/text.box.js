@@ -23,8 +23,9 @@ class TextBox extends Component {
         }
 
         function onClickHandler() {
-            if(!boxRef.state.value) return;
-            sendMessage(base_user, receiver, text);
+            var messageText  = text.trim();
+            if(!messageText) return;
+            sendMessage(base_user, receiver, messageText);
             boxRef.setState({value: ''});
         }
         return <div className="input-group m-1" style={{"height" : "40px"}}>

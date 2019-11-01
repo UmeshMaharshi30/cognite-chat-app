@@ -13,15 +13,15 @@ const user_reducer = (state = null, action)  => {
                     return state
                 }
                 let message = {id : sender_id, message : messageText};
-                var temp_arr = [];
+                var temp_messages_arr = [];
                 if(!state.chat_history[receiver_id]) {
                     var start_convo = {id : receiver_id};
                     start_convo.messages = [message];
                     duplicate_chat_history[receiver_id] = start_convo;
                 } else {
-                    temp_arr = state.chat_history[receiver_id].messages.slice(0);
-                    temp_arr.push(message);
-                    duplicate_chat_history[receiver_id].messages = temp_arr;
+                    temp_messages_arr = state.chat_history[receiver_id].messages.slice(0);
+                    temp_messages_arr.push(message);
+                    duplicate_chat_history[receiver_id].messages = temp_messages_arr;
                 }
                 var temp_state = {...state, chat_history : duplicate_chat_history}
                 localStorage.setItem(sender_id, JSON.stringify(temp_state));
