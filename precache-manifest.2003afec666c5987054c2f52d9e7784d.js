@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9063683d0290ac4efa514a386f4b8e3b",
+    "revision": "aad98a38368eea2054066924c35ec0d5",
     "url": "/cognite-chat-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cognite-chat-app/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "6dc3fbbf83ee56a96ee6",
+    "revision": "3a4c258a63c3a4c18acb",
     "url": "/cognite-chat-app/static/css/main.d11119a9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cognite-chat-app/static/js/2.d7fee1a3.chunk.js"
   },
   {
-    "revision": "6dc3fbbf83ee56a96ee6",
-    "url": "/cognite-chat-app/static/js/main.f5fd8184.chunk.js"
+    "revision": "3a4c258a63c3a4c18acb",
+    "url": "/cognite-chat-app/static/js/main.d0171ef3.chunk.js"
   },
   {
     "revision": "4dd6fb1a88ab83622130",

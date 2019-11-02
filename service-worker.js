@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cognite-chat-app/precache-manifest.0e3698786097c3d85ce67a35609ec758.js"
+  "/cognite-chat-app/precache-manifest.2003afec666c5987054c2f52d9e7784d.js"
 );
 
 self.addEventListener('message', (event) => {
